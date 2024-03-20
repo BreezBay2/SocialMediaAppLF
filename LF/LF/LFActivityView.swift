@@ -1,18 +1,18 @@
 //
-//  ContentView.swift
-//  LF
+//  LFActivityView.swift
+//  LF_App
 //
 //  Created by Taro Altrichter on 20.03.24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LFActivityView: View {
     var body: some View {
-        LFTabView()
+        Text("Activity")
     }
 }
 
 #Preview {
-    ContentView()
+    LFActivityView()
 }

@@ -1,18 +1,18 @@
 //
-//  ContentView.swift
-//  LF
+//  LFSearchView.swift
+//  LF_App
 //
 //  Created by Taro Altrichter on 20.03.24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LFSearchView: View {
     var body: some View {
-        LFTabView()
+        Text("Search")
     }
 }
 
 #Preview {
-    ContentView()
+    LFSearchView()
 }
