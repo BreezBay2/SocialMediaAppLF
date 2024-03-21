@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct LFSearchView: View {
+    @State private var searchText = ""
+    
     var body: some View {
-        Text("Search")
+        NavigationStack {
+            ScrollView {
+                LazyVStack {
+                    ForEach(0 ..< 10) { user in
+                        Text("1")
+                        Divider()
+                    }
+                    .padding(.vertical, 3)
+                }
+            }
+        }
+        .navigationTitle("Search")
+        .searchable(text: $searchText, prompt: "Search Users")
     }
 }
 
