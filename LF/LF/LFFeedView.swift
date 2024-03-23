@@ -13,15 +13,13 @@ struct LFFeedView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(0 ..< 10) { post in
-                        Text("Example Post")
-                        Divider()
+                        PostCell()
                     }
                 }
             }
             .refreshable { }
             .navigationTitle("Feed")
             .navigationBarTitleDisplayMode(.inline)
-            .padding()
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {

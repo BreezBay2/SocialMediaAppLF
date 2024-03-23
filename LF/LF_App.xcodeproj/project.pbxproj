@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F122ACA2BAE64DC0082A487 /* PostCell.swift */; };
 		2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED52BAB437500855A47 /* LFApp.swift */; };
 		2FAA9ED82BAB437500855A47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED72BAB437500855A47 /* ContentView.swift */; };
 		2FAA9EDA2BAB437600855A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED92BAB437600855A47 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F122ACA2BAE64DC0082A487 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		2FAA9ED22BAB437500855A47 /* LF_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LF_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAA9ED52BAB437500855A47 /* LFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFApp.swift; sourceTree = "<group>"; };
 		2FAA9ED72BAB437500855A47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		2FAA9ED42BAB437500855A47 /* LF */ = {
 			isa = PBXGroup;
 			children = (
+				2F122ACA2BAE64DC0082A487 /* PostCell.swift */,
 				2FAA9ED52BAB437500855A47 /* LFApp.swift */,
 				2FAA9ED72BAB437500855A47 /* ContentView.swift */,
 				2FAA9ED92BAB437600855A47 /* Assets.xcassets */,
@@ -169,6 +172,7 @@
 				2FAA9EF22BAB646E00855A47 /* LFRegistrationView.swift in Sources */,
 				2FAA9EE82BAB62CA00855A47 /* LFSearchView.swift in Sources */,
 				2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */,
+				2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */,
 				2FAA9EE42BAB626B00855A47 /* LFTabView.swift in Sources */,
 				2FAA9EEC2BAB62F300855A47 /* LFActivityView.swift in Sources */,
 			);

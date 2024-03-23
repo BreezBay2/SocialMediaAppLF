@@ -57,11 +57,13 @@ struct LFCurrentUserProfileView: View {
                     }
                 }
                 .padding(.horizontal)
+                .padding(.bottom)
+                
+                Divider()
                 
                 LazyVStack {
                     ForEach(0 ..< 10) { post in
-                        Text("Example Post")
-                        Divider()
+                        PostCell()
                     }
                 }
                 .padding(.vertical, 30)
