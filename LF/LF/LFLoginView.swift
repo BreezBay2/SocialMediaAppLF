@@ -68,7 +68,8 @@ struct LFLoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    
+                    LFRegistrationView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack {
                         Text("Don't have an account?")

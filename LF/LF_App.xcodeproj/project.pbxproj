@@ -25,6 +25,9 @@
 		2FABBA8E2BAFC6F500871176 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2FABBA8D2BAFC6F500871176 /* FirebaseFirestore */; };
 		2FABBA902BAFC6F500871176 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FABBA8F2BAFC6F500871176 /* FirebaseFirestoreSwift */; };
 		2FABBA922BAFC6F500871176 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2FABBA912BAFC6F500871176 /* FirebaseStorage */; };
+		2FABBA942BAFCBA500871176 /* LFRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */; };
+		2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA972BAFCCE500871176 /* AuthService.swift */; };
+		2FABBA9B2BAFCDF500871176 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA9A2BAFCDF500871176 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		2FAA9EEF2BAB646000855A47 /* LFLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFLoginView.swift; sourceTree = "<group>"; };
 		2FAA9EF12BAB646E00855A47 /* LFRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRegistrationView.swift; sourceTree = "<group>"; };
 		2FABBA882BAFC5D700871176 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRegistrationViewModel.swift; sourceTree = "<group>"; };
+		2FABBA972BAFCCE500871176 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2FABBA9A2BAFCDF500871176 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		2FAA9ED42BAB437500855A47 /* LF */ = {
 			isa = PBXGroup;
 			children = (
+				2FABBA992BAFCDEE00871176 /* Model */,
+				2FABBA952BAFCCD200871176 /* Authentication */,
 				2F122ACA2BAE64DC0082A487 /* PostCell.swift */,
 				2FAA9ED52BAB437500855A47 /* LFApp.swift */,
 				2FAA9ED72BAB437500855A47 /* ContentView.swift */,
@@ -93,6 +101,7 @@
 				2FAA9EEF2BAB646000855A47 /* LFLoginView.swift */,
 				2FAA9EF12BAB646E00855A47 /* LFRegistrationView.swift */,
 				2FABBA882BAFC5D700871176 /* GoogleService-Info.plist */,
+				2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */,
 			);
 			path = LF;
 			sourceTree = "<group>";
@@ -103,6 +112,30 @@
 				2FAA9EDC2BAB437600855A47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2FABBA952BAFCCD200871176 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				2FABBA962BAFCCDC00871176 /* Service */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		2FABBA962BAFCCDC00871176 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2FABBA972BAFCCE500871176 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2FABBA992BAFCDEE00871176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FABBA9A2BAFCDF500871176 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +223,9 @@
 				2FAA9ED82BAB437500855A47 /* ContentView.swift in Sources */,
 				2FAA9EEA2BAB62E000855A47 /* LFCreatePostView.swift in Sources */,
 				2FAA9EF02BAB646000855A47 /* LFLoginView.swift in Sources */,
+				2FABBA942BAFCBA500871176 /* LFRegistrationViewModel.swift in Sources */,
+				2FABBA9B2BAFCDF500871176 /* User.swift in Sources */,
+				2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */,
 				2FAA9EF22BAB646E00855A47 /* LFRegistrationView.swift in Sources */,
 				2FAA9EE82BAB62CA00855A47 /* LFSearchView.swift in Sources */,
 				2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */,
