@@ -29,7 +29,7 @@ struct LFApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LFLoginView()
+            ContentView()
         }
     }
 }

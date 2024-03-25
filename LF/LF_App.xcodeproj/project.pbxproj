@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F122ACA2BAE64DC0082A487 /* PostCell.swift */; };
+		2F329DAC2BB0F12400673233 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F329DAB2BB0F12400673233 /* ContentViewModel.swift */; };
+		2F329DAE2BB11AEA00673233 /* LFLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F329DAD2BB11AEA00673233 /* LFLoginViewModel.swift */; };
 		2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED52BAB437500855A47 /* LFApp.swift */; };
 		2FAA9ED82BAB437500855A47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED72BAB437500855A47 /* ContentView.swift */; };
 		2FAA9EDA2BAB437600855A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA9ED92BAB437600855A47 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		2F122ACA2BAE64DC0082A487 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2F329DAB2BB0F12400673233 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		2F329DAD2BB11AEA00673233 /* LFLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFLoginViewModel.swift; sourceTree = "<group>"; };
 		2FAA9ED22BAB437500855A47 /* LF_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LF_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAA9ED52BAB437500855A47 /* LFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFApp.swift; sourceTree = "<group>"; };
 		2FAA9ED72BAB437500855A47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +70,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F329DA62BB0F0EB00673233 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2F329DA72BB0F0F000673233 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2F329DA72BB0F0F000673233 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2F329DAA2BB0F10500673233 /* ViewModel */,
+				2F329DA92BB0F10100673233 /* View */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2F329DA92BB0F10100673233 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA9ED72BAB437500855A47 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F329DAA2BB0F10500673233 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F329DAB2BB0F12400673233 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2FAA9EC92BAB437500855A47 = {
 			isa = PBXGroup;
 			children = (
@@ -85,11 +122,11 @@
 		2FAA9ED42BAB437500855A47 /* LF */ = {
 			isa = PBXGroup;
 			children = (
+				2F329DA62BB0F0EB00673233 /* Core */,
 				2FABBA992BAFCDEE00871176 /* Model */,
 				2FABBA952BAFCCD200871176 /* Authentication */,
 				2F122ACA2BAE64DC0082A487 /* PostCell.swift */,
 				2FAA9ED52BAB437500855A47 /* LFApp.swift */,
-				2FAA9ED72BAB437500855A47 /* ContentView.swift */,
 				2FAA9ED92BAB437600855A47 /* Assets.xcassets */,
 				2FAA9EDB2BAB437600855A47 /* Preview Content */,
 				2FAA9EE32BAB626B00855A47 /* LFTabView.swift */,
@@ -99,6 +136,7 @@
 				2FAA9EEB2BAB62F300855A47 /* LFActivityView.swift */,
 				2FAA9EED2BAB62FF00855A47 /* LFCurrentUserProfileView.swift */,
 				2FAA9EEF2BAB646000855A47 /* LFLoginView.swift */,
+				2F329DAD2BB11AEA00673233 /* LFLoginViewModel.swift */,
 				2FAA9EF12BAB646E00855A47 /* LFRegistrationView.swift */,
 				2FABBA882BAFC5D700871176 /* GoogleService-Info.plist */,
 				2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */,
@@ -226,12 +264,14 @@
 				2FABBA942BAFCBA500871176 /* LFRegistrationViewModel.swift in Sources */,
 				2FABBA9B2BAFCDF500871176 /* User.swift in Sources */,
 				2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */,
+				2F329DAE2BB11AEA00673233 /* LFLoginViewModel.swift in Sources */,
 				2FAA9EF22BAB646E00855A47 /* LFRegistrationView.swift in Sources */,
 				2FAA9EE82BAB62CA00855A47 /* LFSearchView.swift in Sources */,
 				2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */,
 				2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */,
 				2FAA9EE42BAB626B00855A47 /* LFTabView.swift in Sources */,
 				2FAA9EEC2BAB62F300855A47 /* LFActivityView.swift in Sources */,
+				2F329DAC2BB0F12400673233 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

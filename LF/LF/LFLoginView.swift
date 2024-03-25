@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct LFLoginView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LFLoginViewModel()
     
     var body: some View {
         NavigationStack {
@@ -23,7 +22,7 @@ struct LFLoginView: View {
                     .padding()
                 
                 VStack {
-                    TextField("Enter your email", text: $email)
+                    TextField("Enter your email", text: $viewModel.email)
                         .textInputAutocapitalization(.never)
                         .font(.subheadline)
                         .padding(12)
@@ -31,7 +30,7 @@ struct LFLoginView: View {
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                     
-                    SecureField("Enter your password", text: $password)
+                    SecureField("Enter your password", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -52,7 +51,7 @@ struct LFLoginView: View {
                 }
                 
                 Button {
-                    
+                    Task { try await viewModel.login() }
                 } label: {
                     Text("Login")
                         .font(.subheadline)

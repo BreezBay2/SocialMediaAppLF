@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel()
+    
     var body: some View {
-        LFTabView()
+        if viewModel.userSession != nil {
+            LFTabView()
+        } else {
+            LFLoginView()
+        }
     }
 }
 
