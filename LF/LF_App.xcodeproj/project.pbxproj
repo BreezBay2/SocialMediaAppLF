@@ -30,6 +30,9 @@
 		2FABBA942BAFCBA500871176 /* LFRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */; };
 		2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA972BAFCCE500871176 /* AuthService.swift */; };
 		2FABBA9B2BAFCDF500871176 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FABBA9A2BAFCDF500871176 /* User.swift */; };
+		2FC6C2422BB23C7600F05B9C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2412BB23C7600F05B9C /* UserService.swift */; };
+		2FC6C2442BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */; };
+		2FC6C2462BB267C800F05B9C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2452BB267C800F05B9C /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFRegistrationViewModel.swift; sourceTree = "<group>"; };
 		2FABBA972BAFCCE500871176 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2FABBA9A2BAFCDF500871176 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2FC6C2412BB23C7600F05B9C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFCurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
+		2FC6C2452BB267C800F05B9C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				2FABBA992BAFCDEE00871176 /* Model */,
 				2FABBA952BAFCCD200871176 /* Authentication */,
 				2F122ACA2BAE64DC0082A487 /* PostCell.swift */,
+				2FC6C2452BB267C800F05B9C /* UserCell.swift */,
 				2FAA9ED52BAB437500855A47 /* LFApp.swift */,
 				2FAA9ED92BAB437600855A47 /* Assets.xcassets */,
 				2FAA9EDB2BAB437600855A47 /* Preview Content */,
@@ -140,6 +147,8 @@
 				2FAA9EF12BAB646E00855A47 /* LFRegistrationView.swift */,
 				2FABBA882BAFC5D700871176 /* GoogleService-Info.plist */,
 				2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */,
+				2FC6C2412BB23C7600F05B9C /* UserService.swift */,
+				2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */,
 			);
 			path = LF;
 			sourceTree = "<group>";
@@ -262,6 +271,8 @@
 				2FAA9EEA2BAB62E000855A47 /* LFCreatePostView.swift in Sources */,
 				2FAA9EF02BAB646000855A47 /* LFLoginView.swift in Sources */,
 				2FABBA942BAFCBA500871176 /* LFRegistrationViewModel.swift in Sources */,
+				2FC6C2462BB267C800F05B9C /* UserCell.swift in Sources */,
+				2FC6C2422BB23C7600F05B9C /* UserService.swift in Sources */,
 				2FABBA9B2BAFCDF500871176 /* User.swift in Sources */,
 				2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */,
 				2F329DAE2BB11AEA00673233 /* LFLoginViewModel.swift in Sources */,
@@ -270,6 +281,7 @@
 				2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */,
 				2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */,
 				2FAA9EE42BAB626B00855A47 /* LFTabView.swift in Sources */,
+				2FC6C2442BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift in Sources */,
 				2FAA9EEC2BAB62F300855A47 /* LFActivityView.swift in Sources */,
 				2F329DAC2BB0F12400673233 /* ContentViewModel.swift in Sources */,
 			);

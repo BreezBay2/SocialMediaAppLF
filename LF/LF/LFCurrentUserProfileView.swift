@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct LFCurrentUserProfileView: View {
+    @StateObject var viewModel = LFCurrentUserProfileViewModel()
+    
+    private var currentUser: User? {
+        return viewModel.currentUser
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -20,11 +26,11 @@ struct LFCurrentUserProfileView: View {
                             .foregroundStyle(Color(.systemGray4))
                         
                         VStack(alignment: .leading, spacing: 4) {
-                            Text("Kofi")
+                            Text(currentUser?.fullname ?? "")
                                 .font(.title2)
                                 .fontWeight(.semibold)
                             
-                            Text("@cutekofi")
+                            Text(currentUser?.username ?? "")
                                 .font(.subheadline)
                             
                             Text("200 Followers")
@@ -34,6 +40,11 @@ struct LFCurrentUserProfileView: View {
                         
                         Spacer()
                         
+                    }
+                    
+                    if let bio = currentUser?.bio {
+                        Text(bio)
+                            .font(.footnote)
                     }
                     
                     Text("This is an example bio. This should show a bunch of stuff you want to tell people about you")

@@ -31,6 +31,7 @@ struct LFRegistrationView: View {
                     .padding(.horizontal, 24)
                 
                 TextField("Enter your username", text: $viewModel.username)
+                    .textInputAutocapitalization(.never)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemGray6))
