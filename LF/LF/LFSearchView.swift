@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct LFSearchView: View {
+    @StateObject var viewModel = LFSearchViewModel()
     @State private var searchText = ""
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(0 ..< 10) { user in
-                        Text("1")
-                        Divider()
+                    ForEach(viewModel.users) { user in
+                        NavigationLink(value: user) {
+                            UserCell(user: user)
+                            
+                            Divider()
+                        }
                     }
                     .padding(.vertical, 3)
                 }

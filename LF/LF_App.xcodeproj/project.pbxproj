@@ -33,6 +33,8 @@
 		2FC6C2422BB23C7600F05B9C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2412BB23C7600F05B9C /* UserService.swift */; };
 		2FC6C2442BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */; };
 		2FC6C2462BB267C800F05B9C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2452BB267C800F05B9C /* UserCell.swift */; };
+		2FC6C2482BB2685B00F05B9C /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2472BB2685B00F05B9C /* ProfileImageView.swift */; };
+		2FC6C24A2BB269E700F05B9C /* LFSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C2492BB269E700F05B9C /* LFSearchViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		2FC6C2412BB23C7600F05B9C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFCurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
 		2FC6C2452BB267C800F05B9C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		2FC6C2472BB2685B00F05B9C /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		2FC6C2492BB269E700F05B9C /* LFSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LFSearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				2FABBA932BAFCBA500871176 /* LFRegistrationViewModel.swift */,
 				2FC6C2412BB23C7600F05B9C /* UserService.swift */,
 				2FC6C2432BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift */,
+				2FC6C2472BB2685B00F05B9C /* ProfileImageView.swift */,
+				2FC6C2492BB269E700F05B9C /* LFSearchViewModel.swift */,
 			);
 			path = LF;
 			sourceTree = "<group>";
@@ -277,11 +283,13 @@
 				2FABBA982BAFCCE500871176 /* AuthService.swift in Sources */,
 				2F329DAE2BB11AEA00673233 /* LFLoginViewModel.swift in Sources */,
 				2FAA9EF22BAB646E00855A47 /* LFRegistrationView.swift in Sources */,
+				2FC6C2482BB2685B00F05B9C /* ProfileImageView.swift in Sources */,
 				2FAA9EE82BAB62CA00855A47 /* LFSearchView.swift in Sources */,
 				2FAA9ED62BAB437500855A47 /* LFApp.swift in Sources */,
 				2F122ACB2BAE64DC0082A487 /* PostCell.swift in Sources */,
 				2FAA9EE42BAB626B00855A47 /* LFTabView.swift in Sources */,
 				2FC6C2442BB23EE600F05B9C /* LFCurrentUserProfileViewModel.swift in Sources */,
+				2FC6C24A2BB269E700F05B9C /* LFSearchViewModel.swift in Sources */,
 				2FAA9EEC2BAB62F300855A47 /* LFActivityView.swift in Sources */,
 				2F329DAC2BB0F12400673233 /* ContentViewModel.swift in Sources */,
 			);
